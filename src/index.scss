@@ -5,6 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+html {
+  font-size: 10px;
+    font-size: calc( 100vw / 1280 * 10 );
+
+    @media all and (max-width: 1023px) {
+      font-size: calc( 100vw / 768 * 10 );
+    }
+
+    @media all and (max-width: 767px) {
+      font-size: calc( 100vw / 320 * 10 );
+    }
 }
 
 code {
