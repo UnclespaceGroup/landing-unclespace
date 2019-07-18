@@ -1,0 +1,92 @@
+@mixin cardMixin ($left, $zIndex) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $zIndex;
+  transform: translate($left, 0);
+  transition: all 0.5s ease-in;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 10rem 0;
+}
+
+.area {
+  width: 70%;
+
+  &_item {
+    border-top: solid 1px black;
+    width: 100%;  
+    padding: 30rem 0 20rem;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 10rem;
+  height: 50rem;
+  width: 30rem;
+}
+
+.cards {
+  position: relative;
+}
+.location {
+  &_0 {
+    .card_1 {
+      @include cardMixin(0, 2);
+    }
+    .card_2 {
+      @include cardMixin(35rem, 1);
+    }
+    .card_3 {
+      @include cardMixin(70rem, 1);
+    }
+  }
+  &_1 {
+    .card_1 {
+      @include cardMixin(0, 2);
+    }
+    .card_2 {
+      @include cardMixin(0, 1);
+    }
+    .card_3 {
+      @include cardMixin(0, 1);
+    }
+  }
+  &_2 {
+    .card_1 {
+      @include cardMixin(0, 2);
+    }
+    .card_2 {
+      @include cardMixin(0, 1);
+    }
+    .card_3 {
+      @include cardMixin(0, 1);
+    }
+  }
+  &_3 {
+    .card_1 {
+      @include cardMixin(0, 1);
+    }
+    .card_2 {
+      @include cardMixin(0, 2);
+    }
+    .card_3 {
+      @include cardMixin(0, 1);
+    }
+  }
+  &_4 {
+    .card_1 {
+      @include cardMixin(0, 1);
+    }
+    .card_2 {
+      @include cardMixin(0, 1);
+    }
+    .card_3 {
+      @include cardMixin(0, 2);
+    }
+  }
+}
