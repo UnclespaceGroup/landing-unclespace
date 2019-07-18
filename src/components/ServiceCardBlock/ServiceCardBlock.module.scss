@@ -58,10 +58,10 @@
   }
   &_2 {
     .card_1 {
-      @include cardMixin(0, 2);
+      @include cardMixin(0, 1);
     }
     .card_2 {
-      @include cardMixin(0, 1);
+      @include cardMixin(0, 2);
     }
     .card_3 {
       @include cardMixin(0, 1);
@@ -72,10 +72,10 @@
       @include cardMixin(0, 1);
     }
     .card_2 {
-      @include cardMixin(0, 2);
+      @include cardMixin(0, 1);
     }
     .card_3 {
-      @include cardMixin(0, 1);
+      @include cardMixin(0, 2);
     }
   }
   &_4 {
