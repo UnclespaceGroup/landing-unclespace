@@ -11,32 +11,32 @@ const items = [
     title: 'Разработка сайтов',
     img: web_site_icon,
     items: [
-      'djnjfdnjkfdnvjknfjdvn',
-      'djnjfdnjkfdnvjknfjdvn',
-      'djnjfdnjkfdnvjknfjdvn',
-      'djnjfdnjkfdnvjknfjdvn'
+      'Корпоративные сайты',
+      'Оригинальные лендинги',
+      'Интернет-магазины',
+      'Сервисы'
     ]
   },
   {
     title: 'Мобильные приложения',
     img: web_site_icon,
     items: [
-      'djnjfdnjkfdnvjknfjdvn',
-      'djnjfdnjkfdnvjknfjdvn',
-      'djnjfdnjkfdnvjknfjdvn',
-      'djnjfdnjkfdnvjknfjdvn',
-      'djnjfdnjkfdnvjknfjdvn'
+      'Кросплатформенные приложения',
+      'Клиент-серверные',
+      'Сервисы (доставка еды, услуги)',
+      'Браузеные приложения',
+      'Игры и развлечения'
     ]
   },
   {
     title: 'Реклама и продвижение',
     img: web_site_icon,
     items: [
-      'djnjfdnjkfdnvjknfjdvn',
-      'djnjfdnjkfdnvjknfjdvn',
-      'djnjfdnjkfdnvjknfjdvn',
-      'djnjfdnjkfdnvjknfjdvn',
-      'djnjfdnjkfdnvjknfjdvn'
+      'Разработка рекламной компании',
+      'Сео-оптимизация',
+      'Продвижение в социальных сетях',
+      '',
+      '100% гарантия'
     ]
   }
 ]
@@ -70,9 +70,9 @@ class ServiceCardBlock extends React.PureComponent {
             items.map(({title, items}, key) => {
               const first = key === 1
               const last = key === items.length
-              const active = position === null
-                ? first || last // show first and last block if has
-                : key === position
+              // const active = position === null
+              //   ? first || last // show first and last block if has
+              //   : key === position
               return (
                 <Waypoint
                   topOffset='60%'

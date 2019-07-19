@@ -4,6 +4,15 @@
     font-size: 3.6rem;
     line-height: 4.2rem;
     color: #000000;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 32rem;
+      border-top: solid 2px #E43A15;
+      margin-top: 1.4rem;
+      margin-bottom: 4rem;
+    }
   }
 
   ul {
@@ -12,6 +21,33 @@
       font-size: 2.4rem;
       line-height: 4rem;
       color: #737373;
+    }
+  }
+}
+.white {
+  composes: black;
+  .title {
+    font-weight: 300;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    color: white;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 32rem;
+      border-top: solid 2px rgba(197, 197, 197, 0.98);
+      margin-top: 1.4rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  ul {
+
+    li {
+      font-size: 2.4rem;
+      line-height: 4rem;
+      color: rgba(197, 197, 197, 0.98);
     }
   }
 }

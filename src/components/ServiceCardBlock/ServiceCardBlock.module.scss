@@ -9,15 +9,15 @@
 
 .container {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   padding: 10rem 0;
 }
 
 .area {
-  width: 70%;
+  width: 60%;
 
   &_item {
-    border-top: solid 1px black;
     width: 100%;  
     padding: 30rem 0 20rem;
   }
