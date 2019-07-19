@@ -1,10 +1,29 @@
 .container {
-
+  padding: 10rem 0 0;
 }
 
 .title {
   font-size: 4.8rem;
   line-height: 5.6rem;
   color: #FEFEFE;
-  margin-bottom: 5rem;
+  margin-bottom: 20rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+
+  &__invert {
+    composes: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.img {
+  width: 40rem;
+  height: 30rem;
+  background: no-repeat center;
+  background-size: contain;
 }
