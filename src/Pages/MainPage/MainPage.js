@@ -5,6 +5,7 @@ import MainBanner from '../../components/MainBanner/MainBanner';
 import ServiceCardBlock from '../../components/ServiceCardBlock/ServiceCardBlock';
 import AdvantagesBlock from '../../components/AdvantagesBlock/AdvantagesBlock'
 import { Waypoint } from 'react-waypoint'
+import FeedbackBlock from '../../components/FeedbackBlock/FeedbackBlock'
 
 class MainPage extends Component {
   state = {
@@ -27,9 +28,8 @@ class MainPage extends Component {
               <AdvantagesBlock />
             </div>
           </Waypoint>
-          <div style={{ height: '200vh' }} />
-          {/*<Waypoint onEnter={() => this.setState({ whiteBackground: true })} />*/}
         </Layout>
+        <FeedbackBlock />
       </div>
     )
   }
