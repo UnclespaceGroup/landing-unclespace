@@ -1,0 +1,74 @@
+.wrapper {
+  transition: all 500ms ease-in 100ms;
+  opacity: 0.1;
+  // transform: translateY(30rem);
+
+  &__active {
+    composes: wrapper;
+    opacity: 1;
+    // transform: translateY(0);
+  }
+}
+
+.black {
+  margin-bottom: 5rem;
+
+  .title {
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 4.2rem;
+    color: #000000;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 10rem;
+      border-top: solid 2px #E43A15;
+      margin-top: 1.4rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 4rem;
+      color: #737373;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+        background: url("../../static/icons/check-coral.svg") no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+}
+.white {
+  composes: black;
+  .title {
+    color: white;
+
+    &:after {
+      border-top: solid 2px rgba(197, 197, 197, 0.98);
+    }
+  }
+
+  ul {
+
+    li {
+      color: rgba(197, 197, 197, 0.98);
+
+      &:before {
+        background: url("../../static/icons/check-white.svg") no-repeat center;
+      }
+    }
+  }
+}

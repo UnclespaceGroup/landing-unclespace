@@ -1,6 +1,7 @@
 .container {
   background-color: #E65245;
   transition: background-color 300ms ease-in;
+  max-width: 100%;
 
   &__white {
     composes: container;

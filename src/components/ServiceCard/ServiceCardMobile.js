@@ -1,10 +1,11 @@
 import React from 'react'
-import s from './ServiceCard.module.scss'
+import s from './ServiceCardMobile.module.scss'
 
-const ServiceCard = (props) => {
+const ServiceCard = ({ title, img }) => {
     return (
         <div className={s.container}>
-              ddd
+            <div className={s.title}>{title}</div>
+            <div className={s.img} style={{ backgroundImage: `url(${img})` }} />
         </div>
     )
 }

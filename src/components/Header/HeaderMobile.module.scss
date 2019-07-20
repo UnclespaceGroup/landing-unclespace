@@ -8,26 +8,13 @@
 }
 
 .flex {
-  padding: 0 5rem;
   height: 7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 5%;
 }
 
-.item {
-  font-weight: 300;
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  color: #ffffff;
-  margin-left: 5rem;
-  cursor: pointer;
-  transition: all 200ms ease-in;
-
-  &:hover {
-    color: #a6a6a6;
-  }
-}
 
 .logo {
   font-size: 2.4rem;

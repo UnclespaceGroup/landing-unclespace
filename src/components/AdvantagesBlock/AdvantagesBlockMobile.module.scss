@@ -1,0 +1,25 @@
+.container {
+  padding: 10rem 0 0;
+}
+
+.title {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  color: #FEFEFE;
+  margin-bottom: 10rem;
+}
+
+.flex {
+
+  &__invert {
+    flex-direction: row-reverse;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 20rem;
+  margin: 5rem 0;
+  background: no-repeat center;
+  background-size: contain;
+}
