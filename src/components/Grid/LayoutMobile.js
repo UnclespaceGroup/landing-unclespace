@@ -1,11 +1,11 @@
 import React from 'react'
-import s from './ServiceCard.module.scss'
+import s from './GridMobile.module.scss'
 
-const ServiceCard = (props) => {
+const Layout = ({ children }) => {
     return (
-        <div className={s.container}>
-              ddd
+        <div className={s.layout}>
+            {children}
         </div>
     )
 }
-export default ServiceCard
+export default Layout

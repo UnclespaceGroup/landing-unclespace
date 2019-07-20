@@ -1,0 +1,37 @@
+.container {
+  // background-color: white;
+  position: fixed;
+  background: linear-gradient(90.06deg, #E43A15 0.03%, #E65245 99.03%);
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.flex {
+  padding: 0 5rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #ffffff;
+  margin-left: 5rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+
+  &:hover {
+    color: #a6a6a6;
+  }
+}
+
+.logo {
+  font-size: 2.4rem;
+  line-height: 4.2rem;
+  color: #ECECEC;
+  cursor: pointer;
+}
