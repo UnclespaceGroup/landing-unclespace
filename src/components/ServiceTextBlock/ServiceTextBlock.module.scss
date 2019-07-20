@@ -1,3 +1,15 @@
+.wrapper {
+  transition: all 500ms ease-in 100ms;
+  opacity: 0.1;
+  // transform: translateY(30rem);
+
+  &__active {
+    composes: wrapper;
+    opacity: 1;
+    // transform: translateY(0);
+  }
+}
+
 .black {
 
   .title {
@@ -17,11 +29,24 @@
   }
 
   ul {
+    list-style-type: none;
+    margin: 0;
 
     li {
       font-size: 2.4rem;
+      font-weight: 300;
       line-height: 4rem;
       color: #737373;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+        background: url("../../static/icons/check-coral.svg") no-repeat center;
+        background-size: contain;
+      }
     }
   }
 }
@@ -39,6 +64,10 @@
 
     li {
       color: rgba(197, 197, 197, 0.98);
+
+      &:before {
+        background: url("../../static/icons/check-white.svg") no-repeat center;
+      }
     }
   }
 }

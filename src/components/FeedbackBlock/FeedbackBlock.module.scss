@@ -3,9 +3,39 @@
   padding: 20rem 0 30rem;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .title {
   font-size: 4.8rem;
   line-height: 5.6rem;
   color: #C7C7C7;
   width: 50rem;
+  margin-bottom: 5rem;
+}
+
+.description {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #AAAAAA;
+}
+
+.button {
+  position: relative;
+  background-color: #E43A15;
+  font-size: 3rem;
+  line-height: 4.2rem;
+  padding: 2rem 4rem;
+  color: #F7F7F7;
+  z-index: 5;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  box-shadow: 0px 6px 24px 0px rgba(0,0,0,0.75);
+
+  &:hover {
+    box-shadow: 0px 14px 27px 8px rgba(0,0,0,0.75);
+  }
 }

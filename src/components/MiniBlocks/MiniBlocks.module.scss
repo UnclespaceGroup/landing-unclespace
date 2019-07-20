@@ -1,0 +1,16 @@
+.icons {
+  //display: flex;
+  justify-content: space-between;
+
+  &__item {
+    display: inline-block;
+    width: 5rem;
+    height: 3rem;
+    background: no-repeat center;
+    background-size: contain;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

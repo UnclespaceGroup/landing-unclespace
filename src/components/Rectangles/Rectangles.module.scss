@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+  // overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+
+.item {
+  position: absolute;
+  width: 32rem;
+  height: 32rem;
+  background: rgba(196, 196, 196, 0.16);
+  transform: rotate(-45deg);
+}
