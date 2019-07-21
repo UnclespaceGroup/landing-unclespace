@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Route, Switch } from 'react-router'
 import Main from './MainPage/MainPageMobile'
 import store from '../store'
+import Page404 from './Page404/Page404Mobile'
 
 class App extends React.PureComponent {
   render() {
@@ -11,7 +12,8 @@ class App extends React.PureComponent {
       <Provider store={store}>
         <BrowserRouter>
           <Switch>
-            <Route exact to={'/'} component={Main} />
+            <Route exact path={'/'} component={Main} />
+            <Route path={'*'} component={Page404} />
           </Switch>
         </BrowserRouter>
       </Provider>

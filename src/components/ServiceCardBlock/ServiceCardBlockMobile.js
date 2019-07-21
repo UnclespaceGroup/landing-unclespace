@@ -1,69 +1,47 @@
 import React from 'react'
 import s from './ServiceCardBlockMobile.module.scss'
-import web_site_icon from '../../static/web-site.png'
 import ServiceCard from '../ServiceCard/ServiceCardMobile'
 import ServiceTextBlock from '../ServiceTextBlock/ServiceTextBlockMobile'
 import Swiper from 'react-id-swiper'
 import Layout from '../Grid/LayoutMobile'
+import { items } from './data'
+import Padding from '../Grid/Padding'
 
-const items = [
-  {
-    title: 'Разработка сайтов',
-    img: web_site_icon,
-    items: [
-      'Корпоративные сайты',
-      'Оригинальные лендинги',
-      'Интернет-магазины',
-      'Сервисы'
-    ]
-  },
-  {
-    title: 'Мобильные приложения',
-    img: web_site_icon,
-    items: [
-      'Кросплатформенные приложения',
-      'Клиент-серверные',
-      'Сервисы (доставка еды, услуги)',
-      'Браузеные приложения',
-      'Игры и развлечения'
-    ]
-  },
-  {
-    title: 'Реклама и продвижение',
-    img: web_site_icon,
-    items: [
-      'Разработка рекламной компании',
-      'Сео-оптимизация',
-      'Продвижение в социальных сетях',
-      '',
-      '100% гарантия'
-    ]
-  }
-]
 const params = {
   // slidesPerView: '1',
   centeredSlides: true,
   effect: 'coverflow',
+  WrapperEl: 'div',
+  slideClass: 'slide',
+  spaceBetween: 30,
   init: true,
+  ContainerEl: 'div',
+  slidesPerView: 'auto',
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-  },
+  }
 }
 
 class ServiceCardBlock extends React.PureComponent {
   render () {
     return (
       <div className={s.container}>
+        <Padding mobile={56} />
+        <Layout>
+          <h2>Предлагаем следующие <span>услуги</span></h2>
+        </Layout>
         <div className={s.slider}>
           <Swiper {...params}>
 
             {
               items.map(({img, title}, key) => {
                 return (
-                  <div key={key} >
-                    <ServiceCard {...{img, title}} />
+                  <div style={{width: '20rem'}}>
+                    <ServiceCard key={key} {...{img, title}} />
                   </div>
+
                 )
               })
             }

@@ -1,45 +1,12 @@
 import React from 'react'
 import s from './ServiceCardBlock.module.scss'
-import web_site_icon from '../../static/web-site.png'
 import ServiceCard from '../ServiceCard/ServiceCard'
 import cn from 'classnames'
 import { Waypoint} from 'react-waypoint'
 import ServiceTextBlock from '../ServiceTextBlock/ServiceTextBlock';
+import { items } from './data'
+import Padding from '../Grid/Padding'
 
-const items = [
-  {
-    title: 'Разработка сайтов',
-    img: web_site_icon,
-    items: [
-      'Корпоративные сайты',
-      'Оригинальные лендинги',
-      'Интернет-магазины',
-      'Сервисы'
-    ]
-  },
-  {
-    title: 'Мобильные приложения',
-    img: web_site_icon,
-    items: [
-      'Кросплатформенные приложения',
-      'Клиент-серверные',
-      'Сервисы (доставка еды, услуги)',
-      'Браузеные приложения',
-      'Игры и развлечения'
-    ]
-  },
-  {
-    title: 'Реклама и продвижение',
-    img: web_site_icon,
-    items: [
-      'Разработка рекламной компании',
-      'Сео-оптимизация',
-      'Продвижение в социальных сетях',
-      '',
-      '100% гарантия'
-    ]
-  }
-]
 
 class ServiceCardBlock extends React.PureComponent {
   state = {
@@ -49,6 +16,8 @@ class ServiceCardBlock extends React.PureComponent {
     const { position } = this.state
     return (
       <>
+        <Padding desktop={80} />
+        <h2>Предлагаем следующие <span>услуги</span></h2>
       <div className={s.container}>
         <div className={s.sticky}>
           <div className={cn(s.cards, s['location_' + position])}>
@@ -89,6 +58,7 @@ class ServiceCardBlock extends React.PureComponent {
           }
         </div>
       </div>
+        <Padding desktop={80} mobile={56} />
       </>
     )
   }

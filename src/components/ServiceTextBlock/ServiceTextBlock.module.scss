@@ -14,14 +14,14 @@
 
   .title {
     font-weight: 300;
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     line-height: 4.2rem;
     color: #000000;
 
     &:after {
       content: '';
       display: block;
-      width: 32rem;
+      width: 20rem;
       border-top: solid 2px #E43A15;
       margin-top: 1.4rem;
       margin-bottom: 4rem;
@@ -30,10 +30,10 @@
 
   ul {
     list-style-type: none;
-    margin: 0;
+    padding: 0;
 
     li {
-      font-size: 2.4rem;
+      font-size: 2rem;
       font-weight: 300;
       line-height: 4rem;
       color: #737373;

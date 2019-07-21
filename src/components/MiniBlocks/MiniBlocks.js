@@ -23,7 +23,7 @@ export const IconLine = () => {
     <div className={s.icons}>
       {
         icons.map(({href, icon}, key) =>
-          <a {...{href, key}} target='_blank' style={{backgroundImage: `url(${icon})`}} className={s.icons__item} />
+          <a href={href} key={key} target='__blank' style={{backgroundImage: `url(${icon})`}} className={s.icons__item} > </a>
         )
       }
     </div>

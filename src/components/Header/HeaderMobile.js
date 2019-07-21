@@ -1,11 +1,12 @@
 import React from 'react'
 import s from './HeaderMobile.module.scss'
+import { Link } from 'react-router-dom'
 
 const Header = (props) => {
   return (
     <div className={s.container}>
       <div className={s.flex}>
-        <div className={s.logo}>UncleSpace</div>
+        <Link to={'/'} className={s.logo}>UncleSpace</Link>
         {/*{ false && <div>*/}
         {/*  <div className={s.flex}>*/}
         {/*    <div className={s.item}>Наши услуги</div>*/}

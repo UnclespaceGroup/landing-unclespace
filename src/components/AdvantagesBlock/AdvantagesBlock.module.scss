@@ -1,12 +1,14 @@
 .container {
-  padding: 10rem 0 0;
 }
 
 .title {
   font-size: 4.8rem;
   line-height: 5.6rem;
-  color: #FEFEFE;
-  margin-bottom: 20rem;
+  color: #FEFEFE!important;
+
+  span {
+    color: white!important;
+  }
 }
 
 .flex {

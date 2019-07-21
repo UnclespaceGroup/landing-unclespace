@@ -7,4 +7,14 @@
     composes: container;
     background-color: #E5E5E5;
   }
+
+  h2{
+    color: #323232;
+    font-size: 3.2rem;
+    font-weight: 300;
+
+    span {
+      color: #E43A15;
+    }
+  }
 }

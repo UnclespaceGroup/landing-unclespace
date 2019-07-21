@@ -8,7 +8,6 @@ body {
 
 }
 html {
-  font-size: 10px;
     font-size: calc( 100vw / 1440 * 10 );
 
     
@@ -16,6 +15,11 @@ html {
     @media all and (max-width: 767px) {
       font-size: calc( 100vw / 320 * 10 );
     }
+
+  @media all and (min-width: 1600px) {
+
+    font-size: calc( 100vw / 1700 * 10 );
+  }
 }
 
 code {

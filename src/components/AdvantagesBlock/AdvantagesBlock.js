@@ -1,33 +1,16 @@
 import React from 'react'
 import s from './AdvantagesBlock.module.scss'
 import ServiceTextBlock from '../ServiceTextBlock/ServiceTextBlock'
-import im1 from '../../static/clients.png'
-import im2 from '../../static/humans.png'
-import im3 from '../../static/soft.png'
-
-const items = [
-  {
-    title: 'Идем навстречу клиенту',
-    items: ['Выслушаем и учтем ваше мнение', 'найдем компромиссы'],
-    img: im1
-  },
-  {
-    title: 'Идем навстречу клиенту',
-    items: ['Выслушаем и учтем ваше мнение', 'найдем компромиссы'],
-    img: im2
-  },
-  {
-    title: 'Идем навстречу клиенту',
-    items: ['Выслушаем и учтем ваше мнение', 'найдем компромиссы'],
-    img: im3
-  }
-]
+import { items } from './data'
+import Padding from '../Grid/Padding'
 
 
 const AdvantagesBlock = () => {
   return (
     <div className={s.container}>
-      <div className={s.title}>Почему стоит работать с нами</div>
+      <Padding desktop={40} mobile={24} />
+      <h2 className={s.title}>Почему стоит <span>выбрать нас</span></h2>
+      <Padding desktop={80} mobile={56} />
       <div>
         {
           items.map((item, key) => {
@@ -40,6 +23,7 @@ const AdvantagesBlock = () => {
           })
         }
       </div>
+      <Padding desktop={40} mobile={24} />
     </div>
   )
 }

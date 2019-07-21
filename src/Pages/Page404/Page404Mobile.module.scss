@@ -1,0 +1,21 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #E43A15;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #737373;
+  text-align: center;
+}
