@@ -9,6 +9,15 @@
   span {
     color: white!important;
   }
+
+  &__black {
+    composes: title;
+    color: black!important;
+
+    span {
+      color: #E43A15!important;
+    }
+  }
 }
 
 .flex {

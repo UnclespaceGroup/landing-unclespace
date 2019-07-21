@@ -14,6 +14,7 @@ class ServiceCardBlock extends React.PureComponent {
   }
   render () {
     const { position } = this.state
+    const { theme } = this.props
     return (
       <>
         <Padding desktop={80} />
@@ -50,7 +51,7 @@ class ServiceCardBlock extends React.PureComponent {
                   onLeave={this.handelOnLeave(key + 1, first, last)}
                   onEnter={this.handleOnEnter(key + 1)} >
                   <div className={s.area_item} >
-                    <ServiceTextBlock {...{ title, items }} />
+                    <ServiceTextBlock {...{ title, items, theme }} />
                   </div>
                 </Waypoint>
               )

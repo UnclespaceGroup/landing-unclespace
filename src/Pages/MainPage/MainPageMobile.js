@@ -28,7 +28,7 @@ class MainPage extends Component {
         <Header />
         <MainBanner />
         <Rectangles {...{items}}>
-          <ServiceCardBlock />
+          <ServiceCardBlock theme={whiteBackground ? 'black' : 'white'} />
           <Layout>
             <Waypoint
               scrollableAncestor={window}
@@ -38,7 +38,7 @@ class MainPage extends Component {
               onLeave={this.changeBackground(true)}
             >
               <div>
-                <AdvantagesBlock />
+                <AdvantagesBlock theme={whiteBackground ? 'black' : 'white'} />
               </div>
             </Waypoint>
           </Layout>

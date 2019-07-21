@@ -26,7 +26,7 @@ class MainPage extends Component {
         <MainBanner />
         <Rectangles {...{items}}>
           <Layout>
-            <ServiceCardBlock />
+            <ServiceCardBlock theme={whiteBackground ? 'black' : 'white'} />
             <Waypoint
               topOffset='20%'
               bottomOffset='40%'
@@ -34,7 +34,7 @@ class MainPage extends Component {
               onLeave={this.changeBackground(true)}
             >
               <div>
-                <AdvantagesBlock />
+                <AdvantagesBlock theme={whiteBackground ? 'black' : 'white'} />
               </div>
             </Waypoint>
           </Layout>

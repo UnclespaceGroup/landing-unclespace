@@ -13,7 +13,7 @@ const params = {
   effect: 'coverflow',
   WrapperEl: 'div',
   slideClass: 'slide',
-  spaceBetween: 30,
+  spaceBetween: 15,
   init: true,
   ContainerEl: 'div',
   slidesPerView: 'auto',
@@ -26,6 +26,7 @@ const params = {
 
 class ServiceCardBlock extends React.PureComponent {
   render () {
+    const { theme } = this.props
     return (
       <div className={s.container}>
         <Padding mobile={56} />
@@ -38,8 +39,8 @@ class ServiceCardBlock extends React.PureComponent {
             {
               items.map(({img, title}, key) => {
                 return (
-                  <div style={{width: '20rem'}}>
-                    <ServiceCard key={key} {...{img, title}} />
+                  <div key={key} style={{width: '100%', height: '36rem'}}>
+                    <ServiceCard {...{img, title}} />
                   </div>
 
                 )
@@ -52,7 +53,7 @@ class ServiceCardBlock extends React.PureComponent {
             items.map(({title, items}, key) => {
               return (
                 <div className={s.area_item} key={key}>
-                  <ServiceTextBlock {...{title, items}} />
+                  <ServiceTextBlock {...{title, items, theme}} />
                 </div>
               )
             })

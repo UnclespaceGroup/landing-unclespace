@@ -22,3 +22,54 @@
   color: #ECECEC;
   cursor: pointer;
 }
+
+.burger {
+  width: 4rem;
+  height: 3rem;
+  background: url("../../static/icons/burger.svg") no-repeat center;
+  background-size: contain;
+
+  &__close {
+    composes: burger;
+    background-image: url("../../static/icons/clear.svg");
+  }
+}
+
+.submenu {
+  top: 7rem;
+  height: calc(100vh - 7rem);
+  width: 90%;
+  padding: 5%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  a {
+    display: block;
+  }
+}
+
+.item {
+  font-size: 2.4rem;
+  margin-bottom: 5rem;
+  font-weight: 400;
+
+  //&:after {
+  //  content: '';
+  //  margin: 1rem 0;
+  //  display: block;
+  //  width: 40%;
+  //  border-top: solid 1px black;
+  //}
+}
+
+.text {
+  margin-top: 8rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.icons {
+  background-color: #E43A15;
+}
