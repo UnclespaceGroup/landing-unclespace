@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './MainBannerMobile.module.scss'
-import { IconLine } from '../MiniBlocks/MiniBlocks'
-import Layout from '../Grid/LayoutMobile'
+import { IconLine } from '../../../../components/MiniBlocks/MiniBlocks'
+import Layout from '../../../../components/Grid/LayoutMobile'
 
 const MainBanner = (props) => {
   return (

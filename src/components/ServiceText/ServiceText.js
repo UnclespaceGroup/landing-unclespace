@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import s from './ServiceTextBlockMobile.module.scss'
+import s from './ServiceText.module.scss'
 import { Waypoint } from 'react-waypoint'
 
-const ServiceTextBlock = ({title, items, theme}) => {
+const ServiceText = ({title, items, theme}) => {
   const [active, setActive] = useState(false)
   return (
     <Waypoint
@@ -26,7 +26,7 @@ const ServiceTextBlock = ({title, items, theme}) => {
     </Waypoint>
   )
 }
-ServiceTextBlock.defaultProps = {
+ServiceText.defaultProps = {
   theme: 'black'
 }
-export default React.memo(ServiceTextBlock)
+export default React.memo(ServiceText)

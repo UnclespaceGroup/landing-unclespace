@@ -1,8 +1,8 @@
 import React from 'react'
 import s from './AdvantagesBlock.module.scss'
-import ServiceTextBlock from '../ServiceTextBlock/ServiceTextBlock'
+import ServiceTextBlock from '../../../../components/ServiceText/ServiceText'
 import { items } from './data'
-import Padding from '../Grid/Padding'
+import Padding from '../../../../components/Grid/Padding'
 
 
 const AdvantagesBlock = ({ theme }) => {

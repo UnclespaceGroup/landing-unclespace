@@ -29,3 +29,9 @@ export const IconLine = () => {
     </div>
   )
 }
+
+export const Line = ({ color, width }) => {
+  return (
+    <div className={s.line} style={{ borderColor: color, borderWidth: width }} />
+  )
+}

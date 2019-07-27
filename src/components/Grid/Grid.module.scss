@@ -1,4 +1,13 @@
 .layout {
-    width: 102.4rem;
-    margin: 0 auto;
+  width: 102.4rem;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,0 +1,26 @@
+.container {
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: #323232;
+  color: white;
+  border-bottom: solid 2px white;
+
+  h1{
+    color: #ffffff;
+    font-size: 6.4rem;
+    font-weight: 300;
+
+    span {
+      color: #E43A15;
+    }
+  }
+  h2{
+    color: #eeeeee;
+    font-size: 3rem;
+    font-weight: 300;
+
+    span {
+      color: #E43A15;
+    }
+  }
+}

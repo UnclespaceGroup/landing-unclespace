@@ -1,11 +1,11 @@
 import React from 'react'
 import s from './ServiceCardBlockMobile.module.scss'
-import ServiceCard from '../ServiceCard/ServiceCardMobile'
-import ServiceTextBlock from '../ServiceTextBlock/ServiceTextBlockMobile'
+import ServiceCard from '../../../../components/ServiceCard/ServiceCardMobile'
+import ServiceTextBlock from '../../../../components/ServiceText/ServiceTextMobile'
 import Swiper from 'react-id-swiper'
-import Layout from '../Grid/LayoutMobile'
+import Layout from '../../../../components/Grid/LayoutMobile'
 import { items } from './data'
-import Padding from '../Grid/Padding'
+import Padding from '../../../../components/Grid/Padding'
 
 const params = {
   // slidesPerView: '1',

@@ -1,11 +1,11 @@
 import React from 'react'
 import s from './ServiceCardBlock.module.scss'
-import ServiceCard from '../ServiceCard/ServiceCard'
+import ServiceCard from '../../../../components/ServiceCard/ServiceCard'
 import cn from 'classnames'
 import { Waypoint} from 'react-waypoint'
-import ServiceTextBlock from '../ServiceTextBlock/ServiceTextBlock';
+import ServiceTextBlock from '../../../../components/ServiceText/ServiceText';
 import { items } from './data'
-import Padding from '../Grid/Padding'
+import Padding from '../../../../components/Grid/Padding'
 
 
 class ServiceCardBlock extends React.PureComponent {

@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './FeedbackBlockMobile.module.scss'
-import Layout from '../Grid/LayoutMobile'
-import { IconLine } from '../MiniBlocks/MiniBlocks'
+import Layout from '../../../../components/Grid/LayoutMobile'
+import { IconLine } from '../../../../components/MiniBlocks/MiniBlocks'
 import { Link } from 'react-router-dom'
 
 const FeedbackBlock = () => {

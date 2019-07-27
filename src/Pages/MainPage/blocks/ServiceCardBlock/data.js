@@ -1,4 +1,4 @@
-import web_site_icon from '../../static/web-site.png'
+import web_site_icon from '../../../../static/web-site.png'
 
 export const items = [
   {

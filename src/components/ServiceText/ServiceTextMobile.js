@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import s from './ServiceTextBlock.module.scss'
+import s from './ServiceTextMobile.module.scss'
 import { Waypoint } from 'react-waypoint'
 
 const ServiceTextBlock = ({title, items, theme}) => {
