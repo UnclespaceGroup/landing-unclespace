@@ -9,17 +9,22 @@ import { ABOUT, BRIEF, CATALOG, MAIN_PAGE } from './URLs'
 import CatalogPage from './CatalogPage/CatalogPage'
 import AboutPage from './AboutPage/AboutPage'
 import BriefPage from './BriefPage/BriefPage'
+import Header from '../components/Header/Header'
+import ScrollToTop from './ScrollToTop'
 
-class App extends React.PureComponent {
-  render() {
+class App extends React.Component {
+  render () {
     return (
       <Provider store={store}>
         <BrowserRouter>
+          <Header />
           <Switch>
-            <Route exact path={MAIN_PAGE} component={Main} />
-            <Route exact path={CATALOG} component={CatalogPage} />
-            <Route exact path={ABOUT} component={AboutPage} />
-            <Route exact path={BRIEF} component={BriefPage} />
+            <ScrollToTop>
+              <Route exact path={MAIN_PAGE} component={Main} />
+              <Route exact path={CATALOG} component={CatalogPage} />
+              <Route exact path={ABOUT} component={AboutPage} />
+              <Route exact path={BRIEF} component={BriefPage} />
+            </ScrollToTop>
             <Route path={'*'} component={Page404} />
           </Switch>
         </BrowserRouter>
@@ -27,4 +32,5 @@ class App extends React.PureComponent {
     )
   }
 }
+
 export default App

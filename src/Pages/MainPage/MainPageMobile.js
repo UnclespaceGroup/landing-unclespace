@@ -7,7 +7,6 @@ import AdvantagesBlock from './blocks/AdvantagesBlock/AdvantagesBlockMobile'
 import { Waypoint } from 'react-waypoint'
 import FeedbackBlock from './blocks/FeedbackBlock/FeedbackBlockMobile'
 import Rectangles from '../../components/Rectangles/RectanglesMobile'
-import Header from '../../components/Header/HeaderMobile'
 
 const items = [
   {posX: 5, posY: 10}, {posX: 20, posY: 30}, {posX: 40, posY: 50}, {posX: 95, posY: 55}, {
@@ -25,7 +24,6 @@ class MainPage extends Component {
     const {whiteBackground} = this.state
     return (
       <div className={whiteBackground ? s.container__white : s.container}>
-        <Header />
         <MainBanner />
         <Rectangles {...{items}}>
           <ServiceCardBlock theme={whiteBackground ? 'black' : 'white'} />

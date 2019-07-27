@@ -17,3 +17,28 @@
 .line {
   border-top: solid 1px white;
 }
+
+.default {
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem 4rem;
+  background-color: #E43A15;
+  transition: all 200ms ease-in;
+
+  &:hover {
+    background-color: #a3412b;
+  }
+}
+
+.withTimeout {
+  opacity: 0;
+  transition: all 200ms ease-in;
+
+  &__active {
+    composes: withTimeout;
+    opacity: 1;
+  }
+}

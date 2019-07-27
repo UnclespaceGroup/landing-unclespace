@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import s from './ServiceText.module.scss'
 import { Waypoint } from 'react-waypoint'
+import { Button } from '../MiniBlocks/MiniBlocks'
 
-const ServiceText = ({title, items, theme}) => {
+const ServiceText = ({title, items, theme, to}) => {
   const [active, setActive] = useState(false)
   return (
     <Waypoint
@@ -22,6 +23,7 @@ const ServiceText = ({title, items, theme}) => {
             }
           </ul>
         </div>
+        {to && <Button to={to} >Перейти</Button>}
       </div>
     </Waypoint>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Header.module.scss'
 import { Link } from 'react-router-dom'
-import { ABOUT, CATALOG, MAIN_PAGE } from '../../Pages/URLs'
+import { ABOUT, BRIEF, CATALOG, MAIN_PAGE } from '../../Pages/URLs'
 
 const Header = (props) => {
   return (
@@ -11,7 +11,7 @@ const Header = (props) => {
         <div>
           <div className={s.flex}>
             <Link to={CATALOG} className={s.item}>Каталог услуг</Link>
-            <Link to={'/some'} className={s.item}>Заполнить бриф</Link>
+            <Link to={BRIEF} className={s.item}>Заполнить бриф</Link>
             <Link to={ABOUT} className={s.item}>О нас</Link>
             <a href={'tel:89042370267'} className={s.item}><b>8(904) 237-02-67</b></a>
           </div>

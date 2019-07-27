@@ -6,6 +6,7 @@ import { Waypoint} from 'react-waypoint'
 import ServiceTextBlock from '../../../../components/ServiceText/ServiceText';
 import { items } from './data'
 import Padding from '../../../../components/Grid/Padding'
+import { CATALOG } from '../../../URLs'
 
 
 class ServiceCardBlock extends React.PureComponent {
@@ -51,7 +52,7 @@ class ServiceCardBlock extends React.PureComponent {
                   onLeave={this.handelOnLeave(key + 1, first, last)}
                   onEnter={this.handleOnEnter(key + 1)} >
                   <div className={s.area_item} >
-                    <ServiceTextBlock {...{ title, items, theme }} />
+                    <ServiceTextBlock {...{ title, items, theme, to: CATALOG }} />
                   </div>
                 </Waypoint>
               )

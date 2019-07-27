@@ -1,22 +1,41 @@
 .container {
-  background: linear-gradient(90.06deg, #E43A15 0.03%, #E65245 99.03%);
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide {
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  background: linear-gradient(90.06deg, #E43A15 0.03%, #E65245 99.03%) no-repeat center;
+  background-size: cover;
 }
+
 
 .title {
   font-weight: 300;
   font-size: 6.4rem;
   line-height: 149.25%;
   color: #F2F2F2;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 1rem black;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 149.25%;
+  color: #ffffff;
+  text-shadow: 0 0 1rem black;
 }
 
 .social {
   position: absolute;
   bottom: 5rem;
   left: 10rem;
+  z-index: 10;
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import s from './AboutPage.module.scss'
 import Layout from '../../components/Grid/LayoutMobile'
-import Header from '../../components/Header/HeaderMobile'
 import Padding from '../../components/Grid/Padding'
 import FeedbackBlock from '../MainPage/blocks/FeedbackBlock/FeedbackBlockMobile'
 import { data } from './data'
@@ -12,7 +11,6 @@ class AboutPage extends React.Component {
     return (
       <div className={s.container}>
         <Padding mobile={50} />
-        <Header />
         <Layout>
             {data}
         </Layout>

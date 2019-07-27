@@ -7,7 +7,6 @@ import AdvantagesBlock from './blocks/AdvantagesBlock/AdvantagesBlock'
 import { Waypoint } from 'react-waypoint'
 import FeedbackBlock from './blocks/FeedbackBlock/FeedbackBlock'
 import Rectangles from '../../components/Rectangles/Rectangles'
-import Header from '../../components/Header/Header'
 
 const items = [
   {posX: 5, posY: 10}, {posX: 20, posY: 30}, {posX: 40, posY: 50}, {posX: 95, posY: 55}, {posX: -10, posY: 60}, {posX: 65, posY: 20}, {posX: 65, posY: 90}
@@ -22,7 +21,6 @@ class MainPage extends Component {
     const {whiteBackground} = this.state
     return (
       <div className={whiteBackground ? s.container__white : s.container}>
-        <Header />
         <MainBanner />
         <Rectangles {...{items}}>
           <Layout>

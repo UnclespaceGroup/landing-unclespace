@@ -3,6 +3,7 @@ import s from './FeedbackBlockMobile.module.scss'
 import Layout from '../../../../components/Grid/LayoutMobile'
 import { IconLine } from '../../../../components/MiniBlocks/MiniBlocks'
 import { Link } from 'react-router-dom'
+import { BRIEF } from '../../../URLs'
 
 const FeedbackBlock = () => {
   return (
@@ -19,7 +20,7 @@ const FeedbackBlock = () => {
             </p>
             <IconLine />
           </div>
-          <Link to={'/brif'} className={s.button}>Заполнить бриф</Link>
+          <Link to={BRIEF} className={s.button}>Заполнить бриф</Link>
         </div>
       </Layout>
     </div>

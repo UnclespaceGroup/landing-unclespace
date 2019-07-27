@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import s from './MiniBlocks.module.scss'
 import im1 from '../../static/icons/vk-black.svg'
 import im2 from '../../static/icons/gmail-logo.svg'
 import im3 from '../../static/icons/instagram.svg'
+import { Link } from 'react-router-dom'
 
 const icons = [
   {
@@ -34,4 +35,17 @@ export const Line = ({ color, width }) => {
   return (
     <div className={s.line} style={{ borderColor: color, borderWidth: width }} />
   )
+}
+export const Button = ({ children, to, color = 'default', ...input }) => {
+  return to
+    ? <Link to={to} className={s[color]} >{children}</Link>
+    : <div className={s[color]} {...input} >{children}</div>
+}
+
+export const WithTimeout = ({ children, timeout = 500 }) => {
+  const [ active, setActive ] = useState(false)
+  setTimeout(() => {
+    setActive(true)
+  }, timeout)
+  return <div className={active ? s.withTimeout__active : s.withTimeout }>{children}</div>
 }

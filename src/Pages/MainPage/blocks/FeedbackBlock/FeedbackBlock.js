@@ -3,6 +3,7 @@ import s from './FeedbackBlock.module.scss'
 import Layout from '../../../../components/Grid/Layout'
 import { IconLine } from '../../../../components/MiniBlocks/MiniBlocks'
 import { Link } from 'react-router-dom'
+import { BRIEF } from '../../../URLs'
 
 const FeedbackBlock = () => {
   return (
@@ -22,7 +23,7 @@ const FeedbackBlock = () => {
             </div>
           </div>
           <div>
-            <Link to={'/brif'} className={s.button}>Заполнить бриф</Link>
+            <Link to={BRIEF} className={s.button}>Заполнить бриф</Link>
           </div>
         </div>
       </Layout>

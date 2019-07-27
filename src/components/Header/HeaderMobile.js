@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import s from './HeaderMobile.module.scss'
 import { Link } from 'react-router-dom'
 import { Collapse } from 'react-collapse'
-import { ABOUT, CATALOG, MAIN_PAGE } from '../../Pages/URLs'
+import { ABOUT, BRIEF, CATALOG, MAIN_PAGE } from '../../Pages/URLs'
 
 const Header = (props) => {
   const [open, setOpenMenu] = useState(false)
@@ -14,11 +14,11 @@ const Header = (props) => {
       </div>
         <Collapse isOpened={open}>
           <div className={s.submenu}>
-            <Link to={MAIN_PAGE} className={s.item}>Наши главную</Link>
+            <Link to={MAIN_PAGE} onClick={() => {setOpenMenu(!open)}} className={s.item}>Наши главную</Link>
 
-            <Link to={CATALOG} className={s.item}>Каталог услуг</Link>
-            <Link to={'/some'} className={s.item}>Заполнить бриф</Link>
-            <Link to={ABOUT} className={s.item}>О нас</Link>
+            <Link to={CATALOG} onClick={() => {setOpenMenu(!open)}} className={s.item}>Каталог услуг</Link>
+            <Link to={BRIEF} onClick={() => {setOpenMenu(!open)}} className={s.item}>Заполнить бриф</Link>
+            <Link to={ABOUT} onClick={() => {setOpenMenu(!open)}} className={s.item}>О нас</Link>
 
 
             <div className={s.text}>По всем вопросам звоните по номеру
